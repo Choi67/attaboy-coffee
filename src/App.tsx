@@ -5,7 +5,7 @@ import './App.css';
 // 임시 홈 컴포넌트 생성
 const Home = () => (
   <div className="p-8">
-    <h1 className="text-2xl font-bold mb-4">애타보이 커피 홈페이지</h1>
+    <h1 className="text-2xl font-bold mb-4">ATTABOY 커피 홈페이지</h1>
     <p>환영합니다! 이 페이지는 현재 개발 중입니다.</p>
   </div>
 );
@@ -14,7 +14,7 @@ const Home = () => (
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen bg-gray-100">
     <header className="bg-white shadow-md p-4">
-      <h1 className="text-xl font-bold">애타보이 커피</h1>
+      <h1 className="text-xl font-bold">ATTABOY 커피</h1>
     </header>
     <main>{children}</main>
   </div>
