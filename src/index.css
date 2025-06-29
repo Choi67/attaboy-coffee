@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 폰트 정의 */
+@font-face {
+  font-family: 'PBGothic';
+  src: url('/fonts/PB Gothic 2021 Rg.woff2') format('woff2'),
+       url('/fonts/PB Gothic 2021 Rg.woff') format('woff'),
+       url('/fonts/PB Gothic 2021 Rg.ttf') format('truetype'),
+       url('/fonts/PB Gothic 2021 Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 폰트 굵기 변형이 있는 경우 추가 정의 */
+@font-face {
+  font-family: 'PBGothic';
+  src: url('/fonts/PB Gothic 2021 Bd.woff2') format('woff2'),
+       url('/fonts/PB Gothic 2021 Bd.woff') format('woff'),
+       url('/fonts/PB Gothic 2021 Bd.ttf') format('truetype'),
+       url('/fonts/PB Gothic 2021 Bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .clip-path-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .clip-path-star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+  .clip-path-heart {
+    clip-path: path('M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z');
+  }
+
+  .clip-path-arrow {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.loading-bar {
+  animation: loading 2s ease-in-out infinite;
+} 
