@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+.env
+*.log
+
+# local env files
+.env.local
+.env.*.local
+
+# vscode
+.vscode
+
+# OS files
+Thumbs.db
+
+# Fonts
+public/fonts/*.otf
+public/fonts/*.ttf
+
+# Product images
+public/product/*.png 
